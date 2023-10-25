@@ -29,4 +29,4 @@ RUN ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/
 
 # Expose port 8000 for incoming traffic
 EXPOSE 8000
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
