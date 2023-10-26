@@ -26,7 +26,7 @@ RUN echo '}' >> /etc/nginx/sites-available/reverse-proxy
 
 # Create a symbolic link to enable the new configuration
 RUN ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/
-
+RUN chmod 777 ./entrypoint.sh
 # Expose port 8000 for incoming traffic
 EXPOSE 8000
 ENTRYPOINT [ "./entrypoint.sh" ]
