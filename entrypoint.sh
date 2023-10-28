@@ -1,3 +1,4 @@
-yarn dev &;
-nginx -g daemon off;
+#!/bin/bash
+yarn dev &
+service nginx start
 sleep infinity
